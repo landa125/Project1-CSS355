@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Energy Meter - View All </title>
+</head>
+<body>
+
+<h1>Energy Meters</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Meter Name</th>
+        <th>Average Annual Energy Consumed</th>
+        <th>Year</th>
+
+    </tr>
+    <% for(var i = 0; i < energy_meters.length; i++) { %>
+    <tr>
+        <td><%= energy_meters[i].meter_id %></td>
+        <td><%= energy_meters[i].meter_name %></td>
+        <td><%= energy_meters[i].avg_annual_energy_consumed %></td>
+        <td><%= energy_meters[i].year %></td>
+    </tr>
+    <% } %>
+</table>
+
+</body>
+</html>

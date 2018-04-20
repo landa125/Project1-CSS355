@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Dormitory - View All</title>
+</head>
+<body>
+
+<h1>Dorms</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Dorm Name</th>
+        <th>Number of Students </th>
+        <th>Village Name</th>
+        <th>Meter Name</th>
+    </tr>
+    <% for(var i = 0; i < dormitory.length; i++) { %>
+    <tr>
+        <td><%= dormitory[i].dorm_id %></td>
+        <td><%= dormitory[i].dorm_name %></td>
+        <td><%= dormitory[i].number_of_students%></td>
+        <td><%= dormitory[i].village_name %></td>
+        <td><%= dormitory[i].meter_name %></td>
+    </tr>
+    <% } %>
+</table>
+</body>
+</html>
